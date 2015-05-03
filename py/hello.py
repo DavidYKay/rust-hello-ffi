@@ -1,7 +1,10 @@
 # treble.py
 
 import ctypes
+import os
 
-libhelloffi = ctypes.CDLL("./libhelloffi.so")
+base_dir = os.path.dirname(os.path.abspath(__file__))
+lib_path = "%s/%s" % (base_dir, "libhelloffi.so")
+libhelloffi = ctypes.CDLL(lib_path)
 
 print libhelloffi.square(9)
