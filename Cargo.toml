@@ -1,0 +1,8 @@
+[package]
+name = "helloffi"
+version = "0.1.0"
+authors = ["David Young-chan Kay <davidykay@gmail.com>"]
+
+[lib]
+name = "helloffi"
+crate-type = ["dylib"]
