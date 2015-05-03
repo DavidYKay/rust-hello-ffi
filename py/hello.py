@@ -4,4 +4,4 @@ import ctypes
 
 libhelloffi = ctypes.CDLL("./libhelloffi.so")
 
-libhelloffi.hello_rust()
+print libhelloffi.square(9)
